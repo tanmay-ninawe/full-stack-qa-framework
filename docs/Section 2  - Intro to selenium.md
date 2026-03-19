@@ -38,7 +38,7 @@ Programming Language supported by Selenium
 > Java **
 > Python
 > C#
-> JavaScript
+> JavaScript.
 > Ruby
 > Others → Go / Haskell / Perl / PHP / R / Dart 
 
