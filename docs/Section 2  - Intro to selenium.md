@@ -46,7 +46,9 @@ Different component of selenium
 > Selenium Grid
 > Selenium IDE
 > Selenium WebDrover
-> Selenium RC --> Discontinued 
+> Selenium RC --> Discontinued
+![](images/2026-03-19-18-54-27.png)
+
 
  Versions of selenium 
 > as of today there are 4 versions of selenium. The latest is selenium 4.
