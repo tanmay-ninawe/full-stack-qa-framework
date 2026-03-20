@@ -29,6 +29,7 @@ What are locators?
 	- Syntax :  dom=document.getElementById(“value”) → we need add this syntax in console tab.
 
 Priority of Locators -
+
 ![](images/2026-03-20-16-00-18.png)
 
 
