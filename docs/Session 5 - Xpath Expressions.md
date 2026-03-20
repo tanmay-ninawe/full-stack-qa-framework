@@ -291,3 +291,15 @@ Different Xpath AXES
 	- //html/child::body
 	- //html/child::head
 		- Child tags locate kar sakte h.
+
+7). ancestor Xpath AXES 
+    - //span/ancestor::html
+
+8). descendent Xpath AXES
+    - //html/descendent::span
+
+
+-----------
+
+Advantages of relative Xpath Expressions. 
+- it is very reliable and helpful. 
