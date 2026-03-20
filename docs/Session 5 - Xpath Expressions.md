@@ -9,6 +9,7 @@ The purpose of XML is to communicate the details between two different systems.
 ------------------------------------
 
 Hierarchy of HTML Source code 
+
 ![](images/2026-03-20-16-09-32.png)
 
 
