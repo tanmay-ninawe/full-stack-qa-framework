@@ -84,7 +84,7 @@ Jar 5 number lihila tr kahich milnar nahi coz, maximum hya page madhye div madhy
 👆ata hya case madhye apn (//Input) [2] cha second index dila aahe mean.overall input tag cha second index. Tya mule ekach result milala. 
 
 4). and Operator 
-//input[@name=’’value’ and @class=’value’]
+//input[@name=’value’ and @class=’value’]
 
 Extras : 
 //input[@checked] 
