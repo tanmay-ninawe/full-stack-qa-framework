@@ -163,5 +163,5 @@ flowchart TD
     }
 
 // here the only catch is in the static method only static variable will work.
-
+- Meaning was to use the variable in static methid we need to make that variable static.
 ~~~
