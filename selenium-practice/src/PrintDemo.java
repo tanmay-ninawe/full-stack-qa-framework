@@ -1,4 +1,6 @@
 public class PrintDemo {
+        
+        static int a = 5; // this is a static variable and it can be accessed by all the methods in the class
 
     public static void main(String[] args) {
      
@@ -39,6 +41,22 @@ public class PrintDemo {
 
         String hello = "This is the String value";
             System.out.println(hello);
+    }
+
+
+    public static void localVariable () {
+
+        int t = 5213;
+
+        System.out.println(t);
+    }
+
+
+
+
+    public static void staticVariable () {
+
+        System.out.println(a);
     }
 }
 
