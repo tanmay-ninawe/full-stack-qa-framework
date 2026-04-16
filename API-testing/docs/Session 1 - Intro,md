@@ -1,0 +1,232 @@
+What is Postman ? 
+> The best API Tool to develop and teset (Manual/Autoamtion) API?Webservices tests with very minimal code in quick and easy way.
+
+
+What is API?
+> - Stands for Application programming interface.
+> - It is a interface/communication protocol between client and server. </br>
+> 
+> <b>Extras : </b> let's say both the systems are based on same architecture then it's easy to fetch the data from client. what if the systems are based on different platforms like Java & Python. we cannot call the Python features with Java. then API Comes in a Picture.  </br>
+> API follows Json/XML standards which are a standardedized by each languges. meaning that this JSON/XML lang will understand by any programming language.
+> ![](images/2026-04-15-15-04-53.png)
+> 
+
+Ways to build APIs : </br> 
+   - 1). SOAP </br>
+   - 2). REST (maninly industry follows this as this is very light weight and easy to maintain)</br>
+  
+</br>
+
+<u>Steps to Test API :</u></br>
+- 1). End Point/Base URL : Address where the API is hosted on the server.
+- 2). HTTP Methods used to comminucate with Rest APIs are -> 
+  - CRUD Operations : 
+  
+```mermaid
+flowchart TD
+    Main[API CRUD Operations] --> Type1[C - Create] -->Type10[Post] 
+    Main --> Type2[R - Retrieve] -->Type11[GET] 
+    Main --> Type3[U - Update]-->Type12[PUT] 
+    Main --> Type4[D - Delete] -->Type13[Delete] 
+``` 
+</br>
+
+
+ - <b>Get :</b> The GET method is used to extract information from the given server using a given URI. While using GET request, it should only extract data and should have no other effect on the data. No Payload/Body required ----> (eg. Get Reservation details from the Server)
+      - How to send input data in GET?
+      - Ans: Using Query Parameters
+
+ - <b>Post :</b> A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms. ---> (Eg, when we want to create a reservation then use POST)
+      - How to send input data in GET?
+      - Ans: Using Query Parameters
+  
+- <b>PUT :</b> Replaces all current representations of the target resource with the uploaded content
+- <b>DELETE :</b> Removes all current representations of the target resource given by a URI.
+  
+----
+Resources : </br>
+- Resource represent API/Collection which can be accessed from the server
+
+eg : </br> 
+Google.com/maps</br> 
+Google.com/images</br> 
+Google.com/collections</br> 
+
+--> Here Google.com is the Base URL and /maps ,/images, /search is a resource/collections.
+
+
+
+ Types of Parameters :
+![](images/2026-04-15-17-14-48.png)
+
+
+
+
+<b> Headers/Cookies: </b>
+- Headers represent the meta-data associated with the API request and response. In layman terms, we were sending Additional details to API to process our request.
+- Example : Authorization details
+- Just like adding authorization layer to authenticate the request. meaning that when we're requesting something the API will check the cookie if it has the login cookie.
+- Similary in header were giving the type of the response whether it is html/xml/json that data we're adding in header.
+
+
+<b> End Point Request URL can be constructed as below : </b>
+>Base URL/resource/(Query/Path)Parameters
+
+
+Test 1
+
+Google Maps Add API (POST):
+This API Will add new place into Server
+ 
+Complete URL : https://rahulshettyacademy.com/maps/api/place/add/json?key= qaclick123
+ 
+Base URL:  https://rahulshettyacademy.com   
+Resource: /maps/api/place/add/json
+Query Parameters: key =qaclick123
+Http Method: POST
+Sample Body :
+{
+  "location": {
+    "lat": -38.383494,
+    "lng": 33.427362
+  },
+  "accuracy": 50,
+  "name": "Frontline house",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "29, side layout, cohen 09",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "French-IN"
+}
+
+Sample Response
+ 
+{
+    "status": "OK",
+    "place_id": "928b51f64aed18713b0d164d9be8d67f",
+    "scope": "APP",
+    "reference": "736f3c9bec384af62a184a1936d42bb0736f3c9bec384af62a184a1936d42bb0",
+    "id": "736f3c9bec384af62a184a1936d42bb0"
+}
+ 
+ 
+
+
+
+
+Google Maps Delete API (POST):
+This API Will delete existing place from Server
+ 
+Complete URL: https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+ 
+Base URL: https://rahulshettyacademy.com
+Resource: /maps/api/place/delete/json
+Query Parameters: key
+Http request : DELETE
+ 
+Sample Body :
+{
+    "place_id":"928b51f64aed18713b0d164d9be8d67f"
+}
+ Sample Response
+{
+    "status": "OK"
+}
+ 
+ 
+ 
+Google Maps get Place  API   (GET):
+This API Will get existing place details from Server
+
+ 
+Complete URL : http://rahulshettyacademy.com/maps/api/place/get/json?place_id=xxxx&key=qaclick123
+ 
+Base URL:  https://rahulshettyacademy.com    	
+Resource: /maps/api/place/get/json
+Query Parameters: key,  place_id  //( place_id  value comes from Add place response)
+Http request: GET
+Note: Key value is hardcoded and it is always qaclick123
+Sample Response for the Provided Place_Id
+{
+ 
+	"location":{
+ 
+    	"lat" : -38.383494,
+ 
+    	"lng" : 33.427362
+ 
+	},
+ 
+	"accuracy":50,
+ 
+	"name":"Frontline house",
+ 
+	"phone_number":"(+91) 983 893 3937",
+ 
+	"address" : "29, side layout, cohen 09",
+ 
+	"types": ["shoe park","shop"],
+ 
+	"website" : "http://google.com",
+ 
+	"language" : "French-IN"
+ 
+}
+ 
+ 
+Google Maps Put Place API  (PUT):
+This API Will update existing place in Server with new values
+ 
+Complete URL : http://rahulshettyacademy.com/maps/api/place/get/json?place_id=xxxx&key=qaclick123
+ 
+Base URL :  https://rahulshettyacademy.com    	
+Resource: /maps/api/place/update/json
+Query Parameters: key
+Http Method: PUT -
+Note: Key value is hardcoded and it is always qaclick123
+
+
+Sample Request:
+{
+"place_id":"8d2573bdf6ceec0e474c5f388fa917fb",
+"address":"70 Summer walk, USA",
+"key":"qaclick123"
+}
+
+
+Sample Response for the Provided Place_Id
+{
+ 
+	"location":{
+ 
+    	"lat" : -38.383494,
+ 
+    	"lng" : 33.427362
+ 
+	},
+ 
+	"accuracy":50,
+ 
+	"name":"Frontline house",
+ 
+	"phone_number":"(+91) 983 893 3937",
+ 
+	"address" : "29, side layout, cohen 09",
+ 
+	"types": ["shoe park","shop"],
+ 
+	"website" : "http://google.com",
+ 
+	"language" : "French-IN"
+ 
+}
+ 
+ 
+ 
+ 
+ 
+
+

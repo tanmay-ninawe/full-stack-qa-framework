@@ -1,0 +1,20 @@
+$kind: http-request
+name: New Request
+url: https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+method: PUT
+queryParams:
+  - key: key
+    value: qaclick123
+    $type: ""
+body:
+  type: json
+  content: "{\r
+
+    \"place_id\":\"8d2573bdf6ceec0e474c5f388fa917fb\",\r
+
+    \"address\":\"70 Summer walk, USA Changing in the server\",\r
+
+    \"key\":\"qaclick123\"\r
+
+    }\r\n"
+order: 3506898307645149
