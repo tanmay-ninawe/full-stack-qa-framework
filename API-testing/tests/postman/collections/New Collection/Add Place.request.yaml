@@ -1,0 +1,46 @@
+$kind: http-request
+name: Add Place
+url: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+method: POST
+queryParams:
+  - key: ""
+    value: ""
+    disabled: true
+    $type: ""
+  - key: key
+    value: qaclick123
+    $type: ""
+body:
+  type: json
+  content: "{\r
+
+    \  \"location\": {\r
+
+    \    \"lat\": -38.383494,\r
+
+    \    \"lng\": 33.427362\r
+
+    \  },\r
+
+    \  \"accuracy\": 50,\r
+
+    \  \"name\": \"Tanmay house\",\r
+
+    \  \"phone_number\": \"(+91) 983 893 3937\",\r
+
+    \  \"address\": \"29, side layout, cohen 09\",\r
+
+    \  \"types\": [\r
+
+    \    \"shoe park\",\r
+
+    \    \"shop\"\r
+
+    \  ],\r
+
+    \  \"website\": \"http://google.com\",\r
+
+    \  \"language\": \"Hindi-IN\"\r
+
+    }\r\n"
+order: 1776264404778
