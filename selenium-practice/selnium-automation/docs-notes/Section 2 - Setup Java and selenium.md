@@ -75,4 +75,4 @@ driver object here has access to all the methods of Chrome driver ( Reason is if
 - WebDriver driver = new ChromeDriver (); </br>
 driver object here has access to the methods of Chrome driver which are defined in the web driver interface.- but where as if we used this webDriver will provide those methods which are supported by all the Browser drivers like ChromeDriver(), Geckodriver() , OperaDriver(), SafariDriver() etc. so the entire code will run on any supported browser. Without any issue,
 
-![alt text](image.png)
+![](images/2026-04-21-10-39-17.png)
