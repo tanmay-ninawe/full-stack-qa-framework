@@ -15,5 +15,6 @@ public class SelIntroduction {
     //Method 2 - Using WebDriverManager --> no need to give the local browser driver path, it will automatically download the driver using WebDriverManager and seth the path.
         WebDriver driver = new ChromeDriver (); 
         driver.get("https://www.google.com");
+        
     }
 }
