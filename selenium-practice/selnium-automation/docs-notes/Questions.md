@@ -5,3 +5,6 @@ Section 1 :
 
 2). Why did selenium uses W3C WebDriver Protocol in Version 4 ?? 
 
+3). Driver.close() vs driver.quite() ?
+
+4). 
