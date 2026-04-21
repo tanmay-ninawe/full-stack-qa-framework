@@ -22,7 +22,7 @@ public class SelIntroduction {
 
         driver.get("https://www.amazon.in/");
 
-         // Wait for page to fully load
+    // Wait for page to fully load This is basically hard wait and not recommended in real time automation, we will learn about waits in later sessions.
         Thread.sleep(3000);
 
     //get the title of the page
@@ -31,10 +31,13 @@ public class SelIntroduction {
     //get the current URL of the page
         System.out.println(driver.getCurrentUrl());
 
+    //get the page sourcecode of the page
+        System.out.println(driver.getPageSource());
+
     //close the browser only the current tab.
         driver.close();
 
     //quit the browser like close but it will also close the background process of the browser
-        driver.quit();
+        // driver.quit();
     }
 }
