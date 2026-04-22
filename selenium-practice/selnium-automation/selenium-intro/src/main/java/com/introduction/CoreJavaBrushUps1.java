@@ -26,12 +26,12 @@ public class CoreJavaBrushUps1 {
         //Arrays in java - Arrays can store multiple values in a single variable. 
 
         // Method 1 of declaring an array.
-            int[] arrayName = new int[5]; // Declaring an array of integers with a size of 5.
-            arrayName[0] = 1;
-            arrayName[1] = 2;
-            arrayName[2] = 3;
-            arrayName[3] = 4;
-            arrayName[4] = 5;
+            int[] arrayNum = new int[5]; // Declaring an array of integers with a size of 5.
+            arrayNum[0] = 1;
+            arrayNum[1] = 2;
+            arrayNum[2] = 3;
+            arrayNum[3] = 4;
+            arrayNum[4] = 5;
 
             String[] StringArray = new String[3]; // Declaring an array of strings with a size of 3.
             StringArray[0] = "Amar";
@@ -45,6 +45,45 @@ public class CoreJavaBrushUps1 {
 
             String[] names = {"Amar", "Akbar", "Anthony"}; // Array of strings
                 System.out.println("First element from the names arrays is : " + names[0]); // Accessing the first element of the array.
+
+
+        //For loop for arrayNum
+            for(int i = 0; i<arrayNum.length; i++) // 
+            {
+                System.out.println(arrayNum[i]);
+            }
+
+
+        // for loop for arrayName2
+            for(int i=0; i<arrayName2.length; i++)
+            {
+                System.out.println(arrayName2[i]);
+            }
+
+
+        // for loop for StringArray
+            for(int i=0; i<StringArray.length; i++)
+            {
+                System.out.println(StringArray[i]);
+            }
+
+
+        //Enhanced for loop for names array
+            for( String s : names)
+            {
+                System.out.println(s);
+            }
+
+
+        // star pattern
+            for (int i=1; i<=5;i++)
+            {
+                for(int j=1; j<=i; j++)
+                {
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
 
     }
 
