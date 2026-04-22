@@ -78,3 +78,6 @@ Int[] intValues = {1, 5, 18, 3 ……., 11, 2};
 → It automatically handles the starting and ending points.</br>
 → String s : Each time, s is set to the next item in the array.</br>
 → : arrStrng : Go through every value in the array called arrStrng.</br>
+
+
+3). If - else condictions.
